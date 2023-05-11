@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        .tabela {
+            background-color: darkorange;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            border: 1px solid rgba(122, 122, 211, 0.685);
+            display: none;
+        }
+
+        div:hover > div {
+            display: block;
+            color: red;
+        }
+
+        h1 {
+            background-color: purple;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Passe o mouse aqui para mostrar as tabelas</h1>
+        <div class="tabela">1</div>
+        <div class="tabela">2</div>
+    </div>
+</body>
+</html>

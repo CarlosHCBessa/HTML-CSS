@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        header {
+            background-color: rgb(116, 161, 161);
+            color: white;
+        }
+
+        nav {
+            background-color: orange;
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        article#noticia {
+            background-color: lightgoldenrodyellow;
+            padding: 3px;
+        }
+        article > aside {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: peru;
+            color: forestgreen;
+        }
+
+        article#topicos > nav {
+            padding: 4px;
+            text-decoration: none;
+            background-color: rgb(226, 163, 163);
+        }
+
+        div#bola {
+           height: 200px;
+           width: 200px;
+           background-color: purple;
+           border-radius: 50%; 
+        }
+
+        .redondo {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Testando Gt</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+   </header>
+   <main>
+    <article>
+        <nav id="topicos">
+            <p>
+            <a href="#">Natureza</a>
+            <a href="#">Saúde</a>
+            </p>
+        </nav>
+    </article>
+    <article id="noticia">
+        <h2>Tecnologia</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab molestias magnam placeat assumenda numquam nostrum maiores qui vitae, eveniet ea iure delectus est aspernatur, quibusdam deserunt quia asperiores ipsum alias?</p>
+        <aside>Texto feito por José Mourinho</aside>
+    </article>
+   </main>
+   <footer>
+    <p>Desenvolvido e criado por Carlos</p>
+   </footer>
+   <div id="bola"></div>
+   <div class="redondo"></div>
+</body>
+</html>
