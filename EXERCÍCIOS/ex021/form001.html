@@ -5,14 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <form action="formato.php" method="get" autocomplete="on">
+    <form action="formato.php" method="post" autocomplete="on">
         <p>
-            <label for="nome">Nome:</label> <input type="text" name="nome" id="nome" minlength="5" maxlength="12" required placeholder="preencha este campo" size="14" autocomplete="username">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" required autocomplete="name" minlength="5" maxlength="15" placeholder="Nome Completo" size="12">
+        </p>
+        <p>
+            <label for="usuario">Usuário:</label> <input type="text" name="usuario" id="usuario" minlength="5" maxlength="12" required placeholder="preencha este campo" size="14" autocomplete="username">
        </p>
         <p>
-            <label for="sobrenome">Sobrenome:</label> <input type="password" name="sobrenome" id="sobrenome" minlength="8" maxlength="15" required placeholder="preencha este campo" size="14" autocomplete="current-password">
+            <label for="semha">Senha:</label> <input type="password" name="senha" id="senha" minlength="8" maxlength="15" required placeholder="preencha este campo" size="14" autocomplete="current-password">
+        </p>
+         <p>
+            <label for="nota">Nota:</label>
+            <input type="number" name="nota" id="nota" required min="0" max="10" step="0.1" placeholder="0 a 10" size="4">
+        </p>
+        <p>
+            <label for="hora">Hora:</label>
+            <input type="time" name="hora" id="hora" required>
+        </p>
+        <p>
+            <label for="periodo">Período</label>
+            <input type="month" name="periodo" id="periodo" required>
+        </p>
+        <p>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" required>
         </p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
